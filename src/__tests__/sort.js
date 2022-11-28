@@ -1,4 +1,4 @@
-import {expect, jest, test} from '@jest/globals'
+import {expect, test} from '@jest/globals'
 import { insertSort } from '../sort'
 
 const expected = [1, 2, 3, 4, 5, 6, 7];
@@ -31,9 +31,9 @@ test('Testing for an empty array', () => {
     expect(newArr).toMatchObject([]);
 })
 
-test('Testing for null', () => {
-    const arr = null;
-    const newArr = insertSort(null);
+// test('Testing for null', () => {
+//     const arr = null;
+//     const newArr = insertSort(null);
 
-    expect(newArr).toBe(null);
-})
+//     expect(newArr).toBe(null);
+// })
